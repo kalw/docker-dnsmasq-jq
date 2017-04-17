@@ -7,7 +7,7 @@ A DNSMasq container configured via environment variable
 ## HOW?
 
 Specify a set of domains or records to map to ips and ports like so:
-`DOMAIN_JSON='{"local": ["127.0.0.1@50053"], "*": ["8.8.8.8"]}'`
+`DOMAIN_JSON='{"local": ["127.0.0.1@50053"], "*": ["8.8.8.8"]}'` or polluting records like :
 `RECORD_JSON='{"my.gtld": ["1.2.3.4"], "your.gtld": ["2.3.4.5"]}'`
 
 The above config would send anything with a `.local` domain to 127.0.0.1 on
